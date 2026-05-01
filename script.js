@@ -104,7 +104,7 @@
                     title: 'Task Manager App',
                     desc: 'Task management app with drag-and-drop functionality and local storage persistence for saving tasks between sessions.',
                     tags: [ 'React JS', 'LocalStorage', 'Tailwind CSS' ],
-                    img: 'images/Task-Manager.png',
+                    img: 'images/Task-manager.png',
                     demo: 'https://task-manager-gamma-sooty-58.vercel.app/', code: 'https://github.com/Mengm2464ff4/Task-Manager'
                 },
             ];
