@@ -74,7 +74,7 @@
                     desc: 'Responsive personal portfolio showcasing skills and projects, built with HTML, CSS, and JavaScript with dark mode and smooth animations.',
                     tags: [ 'HTML5', 'CSS3', 'JavaScript' ],
                     img: 'images/Portfolio.png',
-                    demo: '#', code: 'https://github.com/Mengm2464ff4'
+                    demo: 'https://mengm2464ff4.github.io/My-Landingpage-Portfolio/', code: 'https://github.com/Mengm2464ff4/My-Landingpage-Portfolio'
                 },
                 {
                     title: 'Simple E-Commerce Page',
