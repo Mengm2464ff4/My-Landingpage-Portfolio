@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Vuthy Vutha | Front-End Developer</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+
+<body>
+
+   
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <div class="logo"><span>&lt;</span>Vutha<span>/&gt;</span></div>
+
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+
+            <div class="nav-drawer" id="navDrawer">
+                <div class="drawer-header">
+                    <div class="logo"><span>&lt;</span>Vutha<span>/&gt;</span></div>
+                    <button class="drawer-close" id="drawerClose" aria-label="Close menu"><i
+                            class="fas fa-times"></i></button>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+            <div class="nav-overlay" id="navOverlay"></div>
+        </div>
+    </nav>
+
+
+    <section id="home" class="hero">
+        <div class="hero-shapes">
+            <div class="hs hs1"></div>
+            <div class="hs hs2"></div>
+            <div class="hs hs3"></div>
+        </div>
+        <div class="container hero-grid">
+            <div class="hero-content">
+                <div class="hero-badge"><span class="badge-dot"></span> Open for internships &amp; junior roles</div>
+                <h1>Crafting modern <em>web experiences</em> with code &amp; creativity</h1>
+                <p>Hi, I'm <strong>Vuthy Vutha</strong> — a front-end enthusiast who turns designs into interactive,
+                    responsive websites.</p>
+                <div class="cta-group">
+                    <a href="#contact" class="btn btn-primary"><i class="fas fa-paper-plane"></i> Hire me</a>
+                    <a href="#projects" class="btn btn-ghost"><i class="fas fa-code-branch"></i> Projects</a>
+                    <button id="downloadCVBtn" class="btn btn-dark"><i class="fas fa-file-pdf"></i> Download CV</button>
+                </div>
+            </div>
+            <div class="hero-avatar">
+                <div class="avatar-ring">
+                    <img class="profile-image"
+                        src="images/MyProfile.png"
+                        alt="Vuthy Vutha" onerror="this.src='https://placehold.co/300x300/1d4ed8/ffffff?text=VV'">
+                </div>
+                <div class="avatar-tags">
+                    <span class="a-tag"><i class="fab fa-html5"></i> HTML/CSS</span>
+                    <span class="a-tag"><i class="fab fa-js"></i> JavaScript</span>
+                    <span class="a-tag"><i class="fab fa-react"></i> React.js</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+ 
+    <section id="skills" class="section section-alt">
+        <div class="container">
+            <div class="sec-hdr">
+                <div class="sec-label">What I Know</div>
+                <h2 class="sec-title">Technical Skills</h2>
+            </div>
+            <div class="skills-wrap">
+                <div class="skill-item">
+                    <div class="skill-hdr"><span class="skill-name"><i class="fab fa-html5"></i> HTML5</span><span
+                            class="skill-pct">90%</span></div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" data-w="90"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-hdr"><span class="skill-name"><i class="fab fa-css3-alt"></i> CSS3</span><span
+                            class="skill-pct">85%</span></div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" data-w="85"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-hdr"><span class="skill-name"><i class="fab fa-js"></i> JavaScript</span><span
+                            class="skill-pct">80%</span></div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" data-w="80"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-hdr"><span class="skill-name"><i class="fab fa-react"></i> React.js</span><span
+                            class="skill-pct">70%</span></div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" data-w="70"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-hdr"><span class="skill-name"><i class="fab fa-git-alt"></i> Git &amp;
+                            GitHub</span><span class="skill-pct">75%</span></div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" data-w="75"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-hdr"><span class="skill-name"><i class="fas fa-mobile-alt"></i> Responsive
+                            Design</span><span class="skill-pct">88%</span></div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" data-w="88"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-hdr"><span class="skill-name"><i class="fas fa-wind"></i> Tailwind CSS</span><span
+                            class="skill-pct">75%</span></div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" data-w="75"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+ 
+    <section id="projects" class="section">
+        <div class="container">
+            <div class="sec-hdr">
+                <div class="sec-label">My Work</div>
+                <h2 class="sec-title">Featured Projects</h2>
+            </div>
+            <div class="projects-grid" id="projectsGrid"></div>
+            <div class="load-more">
+                <button id="loadMoreBtn" class="btn btn-ghost"><i class="fab fa-github"></i> Explore more
+                    projects</button>
+            </div>
+        </div>
+    </section>
+
+   
+    <section id="contact" class="section section-alt">
+        <div class="container">
+            <div class="sec-hdr">
+                <div class="sec-label">Get in Touch</div>
+                <h2 class="sec-title">Let's Connect</h2>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Ready to work together?</h3>
+                    <p>I'm actively seeking internships and junior front-end developer roles. Let's build something
+                        great together!</p>
+                    <ul class="contact-details">
+                        <li><i class="fas fa-phone"></i> 096-31-93-606</li>
+                        <li><i class="fas fa-envelope"></i> SongMeng66667777@gmail.com</li>
+                        <li><i class="fab fa-github"></i> github.com/Mengm2464ff4</li>
+                        <li><i class="fas fa-map-marker-alt"></i> 271 Street, Phnom Penh</li>
+                    </ul>
+                </div>
+                <div class="contact-form-wrap">
+                    <form id="internForm">
+                        <div class="form-group">
+                            <label>Full Name</label>
+                            <input type="text" id="name" placeholder="Your full name" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Email Address</label>
+                            <input type="email" id="email" placeholder="your@email.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Message</label>
+                            <textarea id="message" placeholder="Tell me about the opportunity..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full"><i class="fas fa-paper-plane"></i> Send
+                            Message</button>
+                        <div id="formFeedback" class="form-feedback"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+    <footer class="footer">
+        <div class="container footer-inner">
+            <div class="logo footer-logo"><span>&lt;</span>Vutha<span>/&gt;</span></div>
+            <div class="social-links">
+                <a href="https://github.com/Mengm2464ff4" target="_blank" aria-label="GitHub"><i
+                        class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/vuthy-vutha-8770703bb/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://mail.google.com/mail/u/0/?fs=1&to=SongMeng66667777@gmail.com&tf=cm" target="_blank" aria-label="Google Mail"><i class="fab fa-google"></i></a>
+            </div>
+            <p>© 2025 Vuthy Vutha — Built with <i class="fas fa-heart" style="color:#f43f5e"></i> and passion for
+                front-end development.</p>
+        </div>
+    </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
